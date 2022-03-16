@@ -1,0 +1,14 @@
+@baseUrl = http://localhost:3000
+
+
+###  Hello World!
+GET {{baseUrl}}
+
+###  Weather Forecast
+GET {{baseUrl}}/weather
+
+### Internal Error
+GET {{baseUrl}}/weather?error=internal
+
+###  Timeout
+GET {{baseUrl}}/weather?error=timeout
